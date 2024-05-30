@@ -20,7 +20,8 @@
     "@pattern-lab/core": "^6.1.0",
     "@pattern-lab/engine-handlebars": "^6.1.0",
     "@pattern-lab/starterkit-handlebars-vanilla": "^1.4.3",
-    "@pattern-lab/uikit-workshop": "^6.1.0"
+    "@pattern-lab/uikit-workshop": "^6.1.0",
+    "sass": "^1.77.2"
   },
   "devDependencies": {
     "tailwindcss": "^3.4.3"
