@@ -1,4 +1,11 @@
-<div class="destination-selector">
+<div class="bg-white shadow p-4 rounded-lg">
+    <label for="destination" class="block text-gray-700 font-lato">Select Destination</label>
+    <select id="destination" class="mt-2 block w-full border border-gray-300 rounded-md">
+        <option value="paris">Paris</option>
+        <option value="new-york">New York</option>
+        <option value="tokyo">Tokyo</option>
+        <option value="sydney">Sydney</option>
+    </select>
     {{> atoms-input type="text" placeholder="Elige un destino" }}
     {{> atoms-button text="Seleccionar" }}
 </div>
