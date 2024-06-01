@@ -11,7 +11,9 @@
     "pl:serve": "patternlab serve --config ./patternlab-config.json",
     "pl:version": "patternlab --version",
     "start": "npm run pl:serve",
-    "build:css": "postcss source/css/style.scss -o source/css/style.css"
+    "build:scss": "sass source/css/main.scss source/css/main.css",
+    "build:tailwindcss": "tailwindcss -i source/css/tailwind/tailwind.css -o source/css/tailwind.css --watch",
+    "build:css": "postcss source/css/main.css -o public/css/main.min.css"
   },
   "keywords": [],
   "author": "",
@@ -24,9 +26,11 @@
     "@pattern-lab/uikit-workshop": "^6.1.0"
   },
   "devDependencies": {
+    "sass": "^1.77.4",
     "autoprefixer": "^10.4.19",
     "postcss": "^8.4.38",
     "postcss-cli": "^11.0.0",
+    "postcss-scss": "^4.0.9",
     "tailwindcss": "^3.4.3"
   }
 }

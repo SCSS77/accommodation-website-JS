@@ -1,0 +1,36 @@
+/*------------------------------------*\
+    #MAIN VARS
+\*------------------------------------*/
+$links-color: #4CB7AC;
+
+/*------------------------------------*\
+    #CUSTOM STYLES
+\*------------------------------------*/
+
+body {
+	font-family: 'Open Sans', sans-serif;
+	font-weight: 400;
+}
+
+h1, h2, h3, h4, h5, h6 {
+	font-family: 'Lato', sans-serif;
+	font-weight: 600;
+}
+
+a {
+	&:hover {
+		color: var(--links-color);
+	}
+}
+
+.pre-header .font-open-sans {
+	font-size: 0.775rem;
+}
+
+.banner-hero {
+	background-image: url('../../images/banner-home.jpg');
+	height: 525px;
+	background-size: cover;
+	background-position: 0;
+	background-repeat: no-repeat;
+}
