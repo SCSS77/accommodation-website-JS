@@ -1,11 +1,14 @@
-<div class="bg-white shadow p-4 px-4 mx-auto mt-auto w-full h-75 flex justify-center mt-auto">
+<div class="bg-white shadow mx-auto mt-auto w-full h-75 flex justify-center mt-auto">
     <form class="flex flex-col md:flex-row space-y-4 md:space-y-0 md:space-x-4 w-full">
         {{> molecules-destination-select }}
         <div class="flex-1">
-            {{> atoms-input type="text" placeholder="Elige un destino" class="w-full" id="destination-input" }}
+            {{> molecules-calendar-select }}
         </div>
-        <div>
-            {{> atoms-button text="Seleccionar" class="w-full" }}
+        <div class="flex-1">
+            {{> molecules-rooms-select }}
+        </div>
+        <div class="flex-1">
+            {{> atoms-button text="Ver disponibilidad" class="w-full" }}
         </div>
     </form>
 </div>
