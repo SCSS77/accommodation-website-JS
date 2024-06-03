@@ -70,12 +70,7 @@ button:hover {
 .destination-options {
   margin-left: -12.5rem;
   margin-top: 0.2rem;
-  min-width: 30rem;
-}
-.destination-options .destination-link {
-  font-size: 1.1rem;
-  font-weight: 900;
-  line-height: 1.4rem;
+  min-width: 50rem;
 }
 
 #destination-select,
@@ -91,11 +86,36 @@ border-gray-300::placeholder {
 #destination-options {
   left: -1rem;
   margin-top: 1.1rem;
+  width: 955px;
 }
-#destination-options ul li a {
+#destination-options .destination-link {
+  color: #686868;
+  font-size: 1rem;
+  line-height: 1.25rem;
+}
+#destination-options .grid-cols-2 {
+  gap: 1rem 4rem;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  padding: 1rem 0;
+  width: 540px;
+}
+#destination-options .grid-cols-2 li a {
   color: #686868;
   font-size: 0.875rem;
   line-height: 1.25rem;
+}
+#destination-options .w-300 {
+  font-size: 0.875rem;
+  line-height: 1.25rem;
+  width: 270px;
+}
+#destination-options .w-300 img {
+  margin-right: 0.7rem;
+}
+#destination-options .w-300 span {
+  color: #686868;
+  display: block;
+  font-size: 0.775rem;
 }
 
 #destination-select svg {
@@ -103,8 +123,16 @@ border-gray-300::placeholder {
 }
 
 .destination-title {
-  font-size: 1.2rem;
-  line-height: 2rem;
+  font-size: 1.35rem;
+  line-height: 2.1rem;
+}
+
+.destination-container-left {
+  width: 37%;
+}
+
+.destination-container-right {
+  width: 63%;
 }
 
 /*# sourceMappingURL=main.css.map */

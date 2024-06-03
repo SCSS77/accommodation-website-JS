@@ -37,13 +37,7 @@
 .destination-options {
 	margin-left: -12.5rem;
 	margin-top: .2rem;
-	min-width: 30rem;
-
-	.destination-link {
-		font-size: 1.1rem;
-		font-weight: 900;
-		line-height: 1.4rem;
-	}
+	min-width: 50rem;
 }
 
 #destination-select,
@@ -59,11 +53,41 @@ border-gray-300 {
 #destination-options {
 	left: -1rem;
 	margin-top: 1.1rem;
+	width: 955px;
 
-	ul li a {
+	.destination-link {
 		color: $gray2;
+		font-size: 1rem;
+		line-height: 1.25rem;
+	}
+
+	.grid-cols-2 {
+		gap: 1rem 4rem;
+		grid-template-columns: repeat(2, minmax(0, 1fr));
+		padding: 1rem 0;
+		width: 540px;
+
+		li a {
+			color: $gray2;
+			font-size: 0.875rem;
+			line-height: 1.25rem;
+		}
+	}
+
+	.w-300 {
 		font-size: 0.875rem;
 		line-height: 1.25rem;
+		width: 270px;
+
+		img {
+			margin-right: .7rem;
+		}
+
+		span {
+			color: $gray2;
+			display: block;
+			font-size: 0.775rem;
+		}
 	}
 }
 
@@ -75,6 +99,14 @@ border-gray-300 {
 }
 
 .destination-title {
-	font-size: 1.2rem;
-	line-height: 2rem;
+	font-size: 1.35rem;
+	line-height: 2.1rem;
+}
+
+.destination-container-left {
+	width: 37%;
+}
+
+.destination-container-right {
+	width: 63%;
 }
