@@ -36,6 +36,17 @@ button:hover {
   background-repeat: no-repeat;
 }
 
+.slogan-container {
+  width: 29rem;
+  height: 2.65rem;
+  position: absolute;
+  bottom: 5.6rem;
+  justify-content: center;
+  left: 0.5rem;
+  padding: 0.8rem;
+  gap: 0.8rem;
+}
+
 .destination-container.strike-through {
   position: relative;
 }
