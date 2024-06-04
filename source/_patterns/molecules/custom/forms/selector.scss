@@ -39,7 +39,12 @@
 	&-options {
 		margin-left: -12.5rem;
 		margin-top: .2rem;
-		min-width: 50rem;
+		min-width: 29.5rem;
+
+		.destination-link {
+			font-size: 1rem;
+			line-height: 1.25rem;
+		}
 	}
 
 	&-title {

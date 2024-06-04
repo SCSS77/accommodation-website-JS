@@ -79,7 +79,11 @@ button:hover {
 .destination-options {
   margin-left: -12.5rem;
   margin-top: 0.2rem;
-  min-width: 50rem;
+  min-width: 29.5rem;
+}
+.destination-options .destination-link {
+  font-size: 1rem;
+  line-height: 1.25rem;
 }
 .destination-title {
   font-size: 1.35rem;
