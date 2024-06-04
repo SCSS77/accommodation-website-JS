@@ -6,11 +6,11 @@ This project is a web hosting site structured with Pattern Lab using Atomic Desi
 
 The project follows the Atomic Design methodology and is structured into the following levels:
 
-- `00-atoms`: Basic, indivisible components.
-- `01-molecules`: Simple combinations of atoms.
-- `02-organisms`: Complete sections that combine molecules and atoms.
-- `03-templates`: Complete templates using organisms and molecules.
-- `04-pages`: Complete pages using templates.
+- `atoms`: Basic, indivisible components.
+- `molecules`: Simple combinations of atoms.
+- `organisms`: Complete sections that combine molecules and atoms.
+- `templates`: Complete templates using organisms and molecules.
+- `pages`: Complete pages using templates.
 
 ## Defined Elements
 
