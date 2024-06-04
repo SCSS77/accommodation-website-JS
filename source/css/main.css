@@ -165,6 +165,11 @@ button:hover {
   left: -18px;
   width: 330px;
 }
+#rooms-options .items-center span span {
+  color: #686868;
+  display: block;
+  font-size: 0.775rem;
+}
 #rooms-options .btn-decrement {
   margin-left: auto;
 }
@@ -205,6 +210,36 @@ button:hover {
 .banner-hero form button:hover {
   background: #009989;
   color: #FFF;
+}
+
+.why-choose {
+  margin: auto;
+  max-width: 890px;
+  padding: 5.6rem 0;
+}
+.why-choose-title {
+  font-size: 3.2rem;
+  line-height: 5rem;
+}
+.why-choose-container {
+  text-align: center;
+  max-width: 12rem;
+}
+.why-choose-container svg {
+  margin: auto;
+}
+.why-choose-subtitle {
+  color: #686868;
+  font-size: 0.975rem;
+  line-height: 1.25rem;
+  font-weight: 400;
+  margin-top: 1rem;
+}
+
+@media (min-width: 768px) {
+  .md\:grid-cols-4 {
+    grid-template-columns: repeat(4, minmax(0, 1fr));
+  }
 }
 
 /*# sourceMappingURL=main.css.map */
