@@ -1,61 +1,67 @@
-# Proyecto de Web de Hospedaje
+# Web Hosting Project
 
-Este proyecto es una web de hospedaje estructurada con Pattern Lab utilizando Atomic Design. Se han definido varios elementos clave para la web, incluyendo un preheader, header, título, banner hero y una sección "Por qué nos eligen".
+This project is a web hosting site structured with Pattern Lab using Atomic Design. Several key elements have been defined for the site, including a preheader, header, title, hero banner, and a "Why Choose Us" section.
 
-## Estructura del Proyecto
+## Project Structure
 
-El proyecto sigue el enfoque de Atomic Design y está estructurado en los siguientes niveles:
+The project follows the Atomic Design methodology and is structured into the following levels:
 
-- `00-atoms`: Componentes básicos e indivisibles.
-- `01-molecules`: Combinaciones simples de átomos.
-- `02-organisms`: Secciones completas que combinan moléculas y átomos.
-- `03-templates`: Plantillas completas usando organismos y moléculas.
-- `04-pages`: Páginas completas usando plantillas.
+- `00-atoms`: Basic, indivisible components.
+- `01-molecules`: Simple combinations of atoms.
+- `02-organisms`: Complete sections that combine molecules and atoms.
+- `03-templates`: Complete templates using organisms and molecules.
+- `04-pages`: Complete pages using templates.
 
-## Elementos Definidos
+## Defined Elements
 
 ### Preheader
 
-Contiene algunos enlaces de utilidad.
+Contains some utility links.
 
 ### Header
 
-Incluye la navegación y el selector de idioma.
+Includes navigation and the language selector.
 
-### Título
+### Title
 
-Despliega un selector de ciudades.
+Displays a city selector.
 
-### Banner Hero
+### Hero Banner
 
-Incluye un buscador por destino y un elemento para reservar habitación según el número de adultos y niños.
+Includes a destination search and an element to book a room by the number of adults and children.
 
-### Sección "Por qué nos eligen"
+### "Why Choose Us" Section
 
-Muestra algunos puntos destacados del sitio.
+Highlights some key points of the site.
 
-## Tecnologías Utilizadas
+## Technologies Used
 
 - **Pattern Lab**
 - **Atomic Design**
 - **Tailwind CSS**
 - **PostCSS**
 
-## Requisitos
+## Requirements
 
-- Node.js (versión LTS recomendada)
-- npm o yarn
+- Node.js (LTS version recommended)
+- npm or yarn
 
-## Instalación
+## Installation
 
-1. Clona el repositorio:
+1. Clone the repository:
    ```sh
-   git clone <url-del-repositorio>
-   cd <nombre-del-repositorio>
-2. Instala las dependencias:
-   npm install o yarn install
-3. Inicia el servidor de Pattern Lab:
-npm run start o yarn start
+   git clone <repository-url>
+   cd <repository-name>
+2. Install the dependencies:
+   `npm install` o `yarn install`
+3. Start the Pattern Lab server:
+`npm run start` o `yarn start`
 
-## Desplegar
-npm run build o yarn build
+## Deployment
+`npm run build` o `yarn build`
+
+## Contributing
+Contributions are welcome! Please follow the [contributing guidelines](CONTRIBUTING.md).
+
+## License
+This project is licensed under the [MIT License](LICENSE).
