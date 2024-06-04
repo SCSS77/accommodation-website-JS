@@ -53,15 +53,9 @@ Muestra algunos puntos destacados del sitio.
    git clone <url-del-repositorio>
    cd <nombre-del-repositorio>
 2. Instala las dependencias:
-   npm install
-# o
-yarn install
+   npm install o yarn install
 3. Inicia el servidor de Pattern Lab:
-npm run start
-# o
-yarn start
+npm run start o yarn start
 
 ## Desplegar
-npm run build
-# o
-yarn build
+npm run build o yarn build
