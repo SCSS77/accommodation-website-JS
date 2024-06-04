@@ -10,14 +10,21 @@ document.addEventListener('DOMContentLoaded', function () {
     customOptions.querySelectorAll('a').forEach(option => {
         option.addEventListener('click', function (e) {
             e.preventDefault();
-            customSelect.querySelector('span').textContent = this.textContent;
-            destinationInput.value = this.textContent;
+            const optionText = this.textContent.trim();
+            customSelect.querySelector('span').textContent = optionText;
+            destinationInput.value = optionText;
             customOptions.classList.add('hidden');
         });
     });
 
     document.addEventListener('click', function (e) {
         if (!customSelect.contains(e.target) && !customOptions.contains(e.target)) {
+            customOptions.classList.add('hidden');
+        }
+    });
+
+    customOptions.addEventListener('click', function (e) {
+        if (e.target.tagName === 'A') {
             customOptions.classList.add('hidden');
         }
     });
