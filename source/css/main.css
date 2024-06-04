@@ -158,6 +158,42 @@ button:hover {
   font-size: 0.775rem;
 }
 
+#rooms-options {
+  font-size: 1rem;
+  line-height: 1.25rem;
+  margin-top: 0.1rem;
+  left: -18px;
+  width: 330px;
+}
+#rooms-options .btn-decrement {
+  margin-left: auto;
+}
+#rooms-options .btn-decrement,
+#rooms-options .btn-increment {
+  background-color: #FFFAF5;
+  color: #282828;
+  font-size: 1.8rem;
+  line-height: 1;
+  height: 2.5rem;
+  width: 2.5rem;
+}
+#rooms-options .btn-decrement:hover,
+#rooms-options .btn-increment:hover {
+  color: #282828;
+}
+#rooms-options .btn-decrement.disabled,
+#rooms-options .btn-increment.disabled {
+  color: #CDCDCD;
+  background-color: #F7F7F7;
+}
+#rooms-options .counter {
+  align-items: center;
+  display: flex;
+  justify-content: center;
+  height: 2.5rem;
+  width: 3rem;
+}
+
 .banner-hero form button {
   background: #4CB7AC;
   font-size: 0.875rem;
