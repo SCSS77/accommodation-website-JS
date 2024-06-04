@@ -1,0 +1,245 @@
+/*------------------------------------*\
+    #MAIN VARS
+\*------------------------------------*/
+/*------------------------------------*\
+    #CUSTOM STYLES
+\*------------------------------------*/
+body {
+  color: #282828;
+  font-family: "Open Sans", sans-serif;
+  font-weight: 400;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: "Lato", sans-serif;
+  font-weight: 600;
+}
+
+a:hover,
+button:hover {
+  color: #4CB7AC;
+}
+
+.hidden {
+  display: none;
+}
+
+.pre-header .font-open-sans {
+  font-size: 0.775rem;
+}
+
+.banner-hero {
+  background-image: url("../../images/banner-home.jpg");
+  height: 525px;
+  background-size: cover;
+  background-position: 0;
+  background-repeat: no-repeat;
+}
+
+.slogan-container {
+  width: 29rem;
+  height: 2.65rem;
+  position: absolute;
+  bottom: 5.6rem;
+  justify-content: center;
+  left: 0.5rem;
+  padding: 0.8rem;
+  gap: 0.8rem;
+}
+
+.destination-container.strike-through {
+  position: relative;
+}
+.destination-container.strike-through:before {
+  background: #4CB7AC;
+  content: "";
+  display: block;
+  height: 0.9rem;
+  left: -0.9rem;
+  position: absolute;
+  bottom: 0.45rem;
+  width: 16.7rem;
+}
+.destination-trigger {
+  border-bottom: 0.1rem solid #282828;
+  position: relative;
+}
+.destination-trigger:after {
+  content: "";
+  position: absolute;
+  right: -2rem;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 0.5rem;
+  height: 0.4rem;
+  background-image: url('data:image/svg+xml;utf8,<svg width="8" height="6" viewBox="0 0 8 6" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M0.296477 2.21L2.88648 4.8C3.27648 5.19 3.90648 5.19 4.29648 4.8L6.88648 2.21C7.51648 1.58 7.06648 0.5 6.17648 0.5H0.996477C0.106477 0.5 -0.333523 1.58 0.296477 2.21Z" fill="%23282828"/></svg>');
+  background-size: cover;
+  margin-top: 0.5rem;
+}
+.destination-options {
+  margin-left: -12.5rem;
+  margin-top: 0.2rem;
+  min-width: 29.5rem;
+}
+.destination-options .destination-link {
+  font-size: 1rem;
+  line-height: 1.25rem;
+}
+.destination-title {
+  font-size: 1.35rem;
+  line-height: 2.1rem;
+}
+.destination-container-left {
+  width: 37%;
+}
+.destination-container-right {
+  width: 63%;
+}
+
+.banner-hero .border-gray-300 {
+  color: #9A9A9A;
+  border-color: transparent;
+  justify-content: center;
+  position: relative;
+}
+.banner-hero .border-gray-300 svg {
+  margin-right: 0.9rem;
+}
+.banner-hero .border-gray-300::after {
+  content: "";
+  background-color: #CDCDCD;
+  height: 80%;
+  position: absolute;
+  top: 8px;
+  right: 0;
+  width: 0.1rem;
+}
+.banner-hero .border-gray-300--last {
+  color: #282828;
+}
+.banner-hero .border-gray-300--last::after {
+  display: none;
+}
+.banner-hero .border-gray-300::placeholder {
+  color: #9A9A9A;
+}
+
+#destination-options {
+  margin-top: 0.1rem;
+  width: 936px;
+}
+#destination-options .destination-link {
+  color: #686868;
+  font-size: 1rem;
+  line-height: 1.25rem;
+}
+#destination-options .grid-cols-2 {
+  gap: 1rem 4rem;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  padding: 1rem 0;
+  width: 540px;
+}
+#destination-options .grid-cols-2 li a {
+  color: #686868;
+  font-size: 0.875rem;
+  line-height: 1.25rem;
+}
+#destination-options .w-300 {
+  font-size: 0.875rem;
+  line-height: 1.25rem;
+  width: 270px;
+}
+#destination-options .w-300 img {
+  margin-right: 0.7rem;
+}
+#destination-options .w-300 span {
+  color: #686868;
+  display: block;
+  font-size: 0.775rem;
+}
+
+#rooms-options {
+  font-size: 1rem;
+  line-height: 1.25rem;
+  margin-top: 0.1rem;
+  left: -18px;
+  width: 330px;
+}
+#rooms-options .items-center span span {
+  color: #686868;
+  display: block;
+  font-size: 0.775rem;
+}
+#rooms-options .btn-decrement {
+  margin-left: auto;
+}
+#rooms-options .btn-decrement,
+#rooms-options .btn-increment {
+  background-color: #FFFAF5;
+  color: #282828;
+  font-size: 1.8rem;
+  line-height: 1;
+  height: 2.5rem;
+  width: 2.5rem;
+}
+#rooms-options .btn-decrement:hover,
+#rooms-options .btn-increment:hover {
+  color: #282828;
+}
+#rooms-options .btn-decrement.disabled,
+#rooms-options .btn-increment.disabled {
+  color: #CDCDCD;
+  background-color: #F7F7F7;
+}
+#rooms-options .counter {
+  align-items: center;
+  display: flex;
+  justify-content: center;
+  height: 2.5rem;
+  width: 3rem;
+}
+
+.banner-hero form button {
+  background: #4CB7AC;
+  font-size: 0.875rem;
+  text-transform: uppercase;
+  height: 100%;
+  transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out;
+  width: 100%;
+}
+.banner-hero form button:hover {
+  background: #009989;
+  color: #FFF;
+}
+
+.why-choose {
+  margin: auto;
+  max-width: 890px;
+  padding: 5.6rem 0;
+}
+.why-choose-title {
+  font-size: 3.2rem;
+  line-height: 5rem;
+}
+.why-choose-container {
+  text-align: center;
+  max-width: 12rem;
+}
+.why-choose-container svg {
+  margin: auto;
+}
+.why-choose-subtitle {
+  color: #686868;
+  font-size: 0.975rem;
+  line-height: 1.25rem;
+  font-weight: 400;
+  margin-top: 1rem;
+}
+
+@media (min-width: 768px) {
+  .md\:grid-cols-4 {
+    grid-template-columns: repeat(4, minmax(0, 1fr));
+  }
+}
+
+/*# sourceMappingURL=main.css.map */

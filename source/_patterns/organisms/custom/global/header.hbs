@@ -1,0 +1,20 @@
+<header class="bg-white mb-6">
+    <div class="container mx-auto px-4 py-4 flex justify-between items-center">
+        {{> molecules-navbar }}
+        <div class="relative flex items-center space-x-6 text-sm">
+            <div class="relative">
+                {{> atoms-button-language language="ESP" }}
+                <div class="absolute right-0 mt-2 w-48 bg-white rounded-lg shadow-lg z-10 hidden">
+                    <ul class="py-1">
+                        <li><a href="#" class="block px-4 py-2 hover:bg-gray-100">Español</a></li>
+                        <li><a href="#" class="block px-4 py-2 hover:bg-gray-100">Inglés</a></li>
+                        <li><a href="#" class="block px-4 py-2 hover:bg-gray-100">Francés</a></li>
+                    </ul>
+                </div>
+            </div>
+            <button class="focus:outline-none">
+                {{> atoms-menu-burguer }}
+            </button>
+        </div>
+    </div>
+</header>

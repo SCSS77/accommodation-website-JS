@@ -1,0 +1,21 @@
+body {
+	color: $main-color;
+	font-family: 'Open Sans', sans-serif;
+	font-weight: 400;
+}
+
+h1, h2, h3, h4, h5, h6 {
+	font-family: 'Lato', sans-serif;
+	font-weight: 600;
+}
+
+a,
+button {
+	&:hover {
+		color: $links-color;
+	}
+}
+
+.hidden {
+    display: none;
+}

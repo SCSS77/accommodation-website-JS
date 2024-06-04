@@ -1,0 +1,14 @@
+<div class="bg-white shadow mx-auto mt-auto w-full h-75 flex justify-center mt-auto">
+    <form class="flex flex-col md:flex-row space-y-4 md:space-y-0 md:space-x-4 w-full">
+        {{> molecules-destination-select }}
+        <div class="flex-1">
+            {{> molecules-calendar-select }}
+        </div>
+        <div class="flex-1">
+            {{> molecules-rooms-select }}
+        </div>
+        <div class="flex-1">
+            {{> atoms-button text="Ver disponibilidad" class="w-full" }}
+        </div>
+    </form>
+</div>

@@ -1,0 +1,64 @@
+<div class="flex-1 relative">
+    <div id="destination-select" class="block w-full border border-gray-300 rounded-md p-6 px-4 cursor-pointer flex items-center">
+        <svg width="25" height="24" viewBox="0 0 25 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path fill-rule="evenodd" clip-rule="evenodd" d="M7.09315 4.34315C8.59344 2.84285 10.6283 2 12.75 2C14.8717 2 16.9066 2.84285 18.4069 4.34315C19.9071 5.84344 20.75 7.87827 20.75 10C20.75 13.0981 18.7343 16.1042 16.524 18.4373C15.4394 19.5822 14.3513 20.5195 13.5333 21.1708C13.2289 21.4133 12.963 21.6152 12.75 21.7726C12.537 21.6152 12.2711 21.4133 11.9667 21.1708C11.1487 20.5195 10.0606 19.5822 8.97595 18.4373C6.76574 16.1042 4.75 13.0981 4.75 10C4.75 7.87827 5.59285 5.84344 7.09315 4.34315ZM12.1948 23.8317C12.195 23.8319 12.1953 23.8321 12.75 23L13.3047 23.8321C12.9688 24.056 12.5307 24.0556 12.1948 23.8317ZM12.1948 23.8317L12.75 23C13.3047 23.8321 13.3057 23.8314 13.306 23.8312L13.3081 23.8298L13.3148 23.8253L13.3377 23.8098C13.3572 23.7966 13.3849 23.7776 13.4204 23.753C13.4915 23.7038 13.5935 23.6321 13.7222 23.5392C13.9795 23.3534 14.3436 23.0822 14.7792 22.7354C15.6487 22.043 16.8106 21.0428 17.976 19.8127C20.2657 17.3958 22.75 13.9019 22.75 10C22.75 7.34784 21.6964 4.8043 19.8211 2.92893C17.9457 1.05357 15.4022 0 12.75 0C10.0978 0 7.5543 1.05357 5.67893 2.92893C3.80357 4.8043 2.75 7.34784 2.75 10C2.75 13.9019 5.23426 17.3958 7.52405 19.8127C8.68939 21.0428 9.85133 22.043 10.7208 22.7354C11.1564 23.0822 11.5205 23.3534 11.7778 23.5392C11.9065 23.6321 12.0085 23.7038 12.0796 23.753C12.1151 23.7776 12.1428 23.7966 12.1623 23.8098L12.1852 23.8253L12.1919 23.8298L12.1948 23.8317ZM10.75 10C10.75 8.89543 11.6454 8 12.75 8C13.8546 8 14.75 8.89543 14.75 10C14.75 11.1046 13.8546 12 12.75 12C11.6454 12 10.75 11.1046 10.75 10ZM12.75 6C10.5409 6 8.75 7.79086 8.75 10C8.75 12.2091 10.5409 14 12.75 14C14.9591 14 16.75 12.2091 16.75 10C16.75 7.79086 14.9591 6 12.75 6Z" fill="#282828"/>
+        </svg>
+        <span>Alojamiento o destino</span>
+    </div>
+    <div id="destination-options" class="hidden absolute z-10 mt-2 w-full bg-white shadow-lg ring-1 ring-black ring-opacity-5 p-2">
+        <div class="flex w-full">
+            <div class="pr-2 destination-container-left">
+                <div class="px-4 py-2 destination-title">Tu mejor opción en...</div>
+                <ul>
+                    <li><a href="#" class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100 destination-link">A Coruña</a></li>
+                    <li><a href="#" class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100 destination-link">Vigo</a></li>
+                    <li><a href="#" class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100 destination-link">Las Rozas, Madrid</a></li>
+                    <li><a href="#" class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100 destination-link">Barcelona</a></li>
+                    <li><a href="#" class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100 destination-link">Sabadell, Barcelona</a></li>
+                    <li><a href="#" class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100 destination-link">Lugo</a></li>
+                </ul>
+            </div>
+            <div class="pr-2 destination-container-right">
+                <div class="py-2 destination-title">Alojamientos</div>
+                <ul class="grid grid-cols-2 gap-4">
+                    <li class="flex w-300">
+                        <img src="../../../../images/alojamiento1.jpg" alt="Alojamiento 1" width="112">
+                        <div class="flex-1 w-300">Hotel 1
+                            <span>A Coruña</span>
+                        </div>
+                    </li>
+                    <li class="flex w-300">
+                        <img src="../../../../images/alojamiento2.jpg" alt="Alojamiento 2" width="112">
+                        <div class="flex-1">Hotel 2
+                            <span>Vigo</span>
+                        </div>
+                    </li>
+                    <li class="flex w-300">
+                        <img src="../../../../images/alojamiento3.jpg" alt="Alojamiento 3" width="112">
+                        <div class="flex-1">Hotel 3
+                            <span>Madrid</span>
+                        </div>
+                    </li>
+                    <li class="flex w-300">
+                        <img src="../../../../images/alojamiento4.jpg" alt="Alojamiento 4" width="112">
+                        <div class="flex-1">Hotel 4
+                            <span>Barcelona</span>
+                        </div>
+                    </li>
+                    <li class="flex w-300">
+                        <img src="../../../../images/alojamiento5.jpg" alt="Alojamiento 5" width="112">
+                        <div class="flex-1">Hotel 5
+                            <span>Lugo</span>
+                        </div>
+                    </li>
+                    <li class="flex w-300">
+                        <img src="../../../../images/alojamiento6.jpg" alt="Alojamiento 6" width="112">
+                        <div class="flex-1">Hotel 6
+                            <span>Barcelona</span>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</div>

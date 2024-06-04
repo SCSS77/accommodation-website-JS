@@ -115,7 +115,7 @@
     #MIXINS
 \*------------------------------------*/
 /**
- * Body Styles 
+ * Body Styles
  * 1) Prevent Mobile Safari from scaling up text: https://blog.55minutes.com/2012/04/iphone-text-resizing/
  */
 /**
@@ -830,7 +830,7 @@ tr {
     #CARD
 \*------------------------------------*/
 /**
- * A collection of text and/or images and/or other smaller content 
+ * A collection of text and/or images and/or other smaller content
  */
 .c-card {
   display: block;
@@ -940,7 +940,7 @@ tr {
     #GRID
 \*------------------------------------*/
 /**
- * Primary Grid  
+ * Primary Grid
  */
 .l-grid {
   display: grid;
@@ -1102,7 +1102,7 @@ tr {
     #CARD LIST
 \*------------------------------------*/
 /**
- * An unordered list of cards 
+ * An unordered list of cards
  */
 .c-card-list {
   display: grid;

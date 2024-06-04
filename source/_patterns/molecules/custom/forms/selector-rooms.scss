@@ -1,0 +1,48 @@
+#rooms-options {
+  font-size: 1rem;
+  line-height: 1.25rem;
+  margin-top: .1rem;
+  left: -18px;
+  width: 330px;
+
+  .items-center {
+    span {
+      span {
+        color: $gray2;
+        display: block;
+        font-size: 0.775rem;
+      }
+    }
+  }
+
+  .btn-decrement {
+    margin-left: auto;
+  }
+
+  .btn-decrement,
+  .btn-increment {
+    background-color: $white2;
+    color: $main-color;
+    font-size: 1.8rem;
+    line-height: 1;
+    height: 2.5rem;
+    width: 2.5rem;
+
+    &:hover {
+      color: $main-color;
+    }
+
+    &.disabled {
+      color: $gray3;
+      background-color: $gray4;
+    }
+  }
+
+  .counter {
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    height: 2.5rem;
+    width: 3rem;
+  }
+}
