@@ -30,6 +30,7 @@ button {
 }
 
 .button {
+  color: #FFF;
   font-size: 0.875rem;
   text-transform: uppercase;
   height: 100%;
@@ -40,7 +41,7 @@ button {
 .button--green {
   background: #4CB7AC;
 }
-button .button--green:hover {
+.button--green:hover {
   background: #009989;
   color: #FFF;
 }
@@ -173,7 +174,7 @@ button .button--green:hover {
   line-height: 1.25rem;
   margin-top: 0.1rem;
   left: -18px;
-  width: calc(100% + 36px);
+  width: calc(100% + 34px);
 }
 .searcher__item-rooms .searcher__item-dropdown-item {
   align-items: center;

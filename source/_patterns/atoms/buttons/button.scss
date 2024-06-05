@@ -1,4 +1,5 @@
 .button {
+  color: $white;
   font-size: .875rem;
   text-transform: uppercase;
   height: 100%;
@@ -8,7 +9,6 @@
 
   &--green {
     background: $links-color;
-    button
 
     &:hover {
       background: $main-color-darken;

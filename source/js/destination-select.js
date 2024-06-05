@@ -6,7 +6,7 @@ document.addEventListener('DOMContentLoaded', function () {
         customOptions.classList.toggle('hidden');
     });
 
-    customOptions.querySelectorAll('.flex-1').forEach(option => {
+    customOptions.querySelectorAll('.app_accommodation-item').forEach(option => {
         option.addEventListener('click', function (e) {
             e.preventDefault();
             const optionText = this.querySelector('span').textContent.trim();
