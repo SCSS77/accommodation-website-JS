@@ -37,57 +37,71 @@ button:hover {
   color: #FFF;
 }
 
-#destination-options {
+.app_destination-options {
   margin-top: 0.1rem;
   width: 936px;
 }
-#destination-options .destination-link {
+.app_destination-options .destination-container-left {
+  width: 37%;
+}
+.app_destination-options .destination-container-right {
+  width: 63%;
+}
+.app_destination-options .destination-title {
+  font-size: 1.35rem;
+  line-height: 2.1rem;
+}
+.app_destination-options .destination-text {
   color: #686868;
   font-size: 1rem;
   line-height: 1.25rem;
 }
-#destination-options .grid-cols-2 {
+.app_destination-options .grid-cols-2 {
   gap: 1rem 4rem;
   grid-template-columns: repeat(2, minmax(0, 1fr));
   padding: 1rem 0;
   width: 540px;
 }
-#destination-options .grid-cols-2 li a {
+.app_destination-options .grid-cols-2 li a {
   color: #686868;
   font-size: 0.875rem;
   line-height: 1.25rem;
 }
-#destination-options .w-300 {
+.app_destination-options .w-300 {
   font-size: 0.875rem;
   line-height: 1.25rem;
   width: 270px;
 }
-#destination-options .w-300 img {
+.app_destination-options .w-300 img {
   margin-right: 0.7rem;
 }
-#destination-options .w-300 span {
+.app_destination-options .w-300 span {
   color: #686868;
   display: block;
   font-size: 0.775rem;
 }
 
-#rooms-options {
+.app_rooms-label {
+  white-space: nowrap;
+}
+
+.app_rooms-options {
   font-size: 1rem;
   line-height: 1.25rem;
   margin-top: 0.1rem;
   left: -18px;
   width: 330px;
 }
-#rooms-options .items-center span span {
+.app_rooms-options .items-center span span {
   color: #686868;
   display: block;
   font-size: 0.775rem;
 }
-#rooms-options .btn-decrement {
+.app_rooms-options .btn-decrement {
   margin-left: auto;
 }
-#rooms-options .btn-decrement,
-#rooms-options .btn-increment {
+.app_rooms-options .btn-decrement,
+.app_rooms-options .btn-increment {
   background-color: #FFFAF5;
   color: #282828;
   font-size: 1.8rem;
@@ -95,16 +109,16 @@ button:hover {
   height: 2.5rem;
   width: 2.5rem;
 }
-#rooms-options .btn-decrement:hover,
-#rooms-options .btn-increment:hover {
+.app_rooms-options .btn-decrement:hover,
+.app_rooms-options .btn-increment:hover {
   color: #282828;
 }
-#rooms-options .btn-decrement.disabled,
-#rooms-options .btn-increment.disabled {
+.app_rooms-options .btn-decrement.disabled,
+.app_rooms-options .btn-increment.disabled {
   color: #CDCDCD;
   background-color: #F7F7F7;
 }
-#rooms-options .counter {
+.app_rooms-options .counter {
   align-items: center;
   display: flex;
   justify-content: center;
@@ -112,10 +126,10 @@ button:hover {
   width: 3rem;
 }
 
-.destination-container.strike-through {
+.app_destination-container.strike-through {
   position: relative;
 }
-.destination-container.strike-through:before {
+.app_destination-container.strike-through:before {
   background: #4CB7AC;
   content: "";
   display: block;
@@ -125,11 +139,11 @@ button:hover {
   bottom: 0.45rem;
   width: 16.7rem;
 }
-.destination-trigger {
+.app_destination-trigger {
   border-bottom: 0.1rem solid #282828;
   position: relative;
 }
-.destination-trigger:after {
+.app_destination-trigger:after {
   content: "";
   position: absolute;
   right: -2rem;
@@ -141,24 +155,14 @@ button:hover {
   background-size: cover;
   margin-top: 0.5rem;
 }
-.destination-options {
+.app_destination .destination-options {
   margin-left: -12.5rem;
   margin-top: 0.2rem;
   min-width: 29.5rem;
 }
-.destination-options .destination-link {
+.app_destination .destination-options .destination-link {
   font-size: 1rem;
   line-height: 1.25rem;
-}
-.destination-title {
-  font-size: 1.35rem;
-  line-height: 2.1rem;
-}
-.destination-container-left {
-  width: 37%;
-}
-.destination-container-right {
-  width: 63%;
 }
 
 .banner-hero {

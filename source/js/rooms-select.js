@@ -1,10 +1,9 @@
 document.addEventListener('DOMContentLoaded', function() {
-    const roomInfoToggle = document.getElementById('rooms-label');
-    const roomDropdown = document.getElementById('rooms-options');
-    const adultsCount = document.getElementById('rooms-adults-count');
-    const childrenCount = document.getElementById('rooms-children-count');
-    const roomsCount = document.getElementById('rooms-count');
-    const roomInfo = document.getElementById('rooms-info');
+    const roomInfoToggle = document.querySelector('.app_rooms-label');
+    const roomDropdown = document.querySelector('.app_rooms-options');
+    const adultsCount = document.querySelector('.app_rooms-adults-count');
+    const childrenCount = document.querySelector('.app_rooms-children-count');
+    const roomsCount = document.querySelector('.app_rooms-count');
 
     function closeDropdown(event) {
         if (!roomDropdown.contains(event.target) && event.target !== roomInfoToggle) {
@@ -12,28 +11,40 @@ document.addEventListener('DOMContentLoaded', function() {
         }
     }
 
-    roomInfoToggle.addEventListener('click', function() {
-        roomDropdown.classList.toggle('hidden');
-    });
+    if (roomInfoToggle && roomDropdown) {
+        roomInfoToggle.addEventListener('click', function() {
+            roomDropdown.classList.toggle('hidden');
+        });
 
-    document.addEventListener('click', closeDropdown);
+        document.addEventListener('click', closeDropdown);
+    }
 
     function updateRoomInfo() {
-        roomInfo.textContent = `${adultsCount.textContent} Adultos · ${childrenCount.textContent} Niños · ${roomsCount.textContent} hab.`;
+        if (roomInfoToggle && adultsCount && childrenCount && roomsCount) {
+            roomInfoToggle.textContent = `${adultsCount.textContent} Adults · ${childrenCount.textContent} Children · ${roomsCount.textContent} Rooms`;
 
-        localStorage.setItem('adults', adultsCount.textContent);
-        localStorage.setItem('children', childrenCount.textContent);
-        localStorage.setItem('rooms', roomsCount.textContent);
+            localStorage.setItem('adults', adultsCount.textContent);
+            localStorage.setItem('children', childrenCount.textContent);
+            localStorage.setItem('rooms', roomsCount.textContent);
+            localStorage.setItem('roomInfo', roomInfoToggle.textContent);
+        } else {
+            console.error('One or more necessary elements not found in the DOM');
+        }
     }
 
-    if(localStorage.getItem('adults')) {
+    if (localStorage.getItem('adults')) {
         adultsCount.textContent = localStorage.getItem('adults');
     }
-    if(localStorage.getItem('children')) {
+    if (localStorage.getItem('children')) {
         childrenCount.textContent = localStorage.getItem('children');
     }
-    if(localStorage.getItem('rooms')) {
+    if (localStorage.getItem('rooms')) {
         roomsCount.textContent = localStorage.getItem('rooms');
+    }
+    if (localStorage.getItem('roomInfo')) {
+        roomInfoToggle.textContent = localStorage.getItem('roomInfo');
+    } else {
+        updateRoomInfo(); // To set initial values in localStorage
     }
 
     document.querySelectorAll('.btn-increment, .btn-decrement').forEach(button => {
@@ -43,23 +54,27 @@ document.addEventListener('DOMContentLoaded', function() {
             const countElement = type === 'adults' ? adultsCount : type === 'children' ? childrenCount : roomsCount;
             const increment = this.textContent === '+' ? 1 : -1;
 
-            let newCount = parseInt(countElement.textContent) + increment;
-            if (newCount < 0) {
-                newCount = 0;
-            }
-            countElement.textContent = newCount;
-
-            if (type !== 'rooms') {
-                const decrementButton = this.parentElement.querySelector('.btn-decrement');
-                decrementButton.disabled = newCount <= 0;
-                if (newCount <= 0) {
-                    decrementButton.classList.add('disabled');
-                } else {
-                    decrementButton.classList.remove('disabled');
+            if (countElement) {
+                let newCount = parseInt(countElement.textContent) + increment;
+                if (newCount < 0) {
+                    newCount = 0;
                 }
-            }
+                countElement.textContent = newCount;
 
-            updateRoomInfo();
+                if (type !== 'rooms') {
+                    const decrementButton = this.parentElement.querySelector('.btn-decrement');
+                    decrementButton.disabled = newCount <= 0;
+                    if (newCount <= 0) {
+                        decrementButton.classList.add('disabled');
+                    } else {
+                        decrementButton.classList.remove('disabled');
+                    }
+                }
+
+                updateRoomInfo();
+            } else {
+                console.error('Count element not found in the DOM');
+            }
         });
     });
 });

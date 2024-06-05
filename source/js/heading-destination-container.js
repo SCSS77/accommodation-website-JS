@@ -1,6 +1,6 @@
 document.addEventListener('DOMContentLoaded', function () {
-    const destinationContainer = document.querySelector('.destination-container');
-    const destinationTrigger = document.querySelector('.destination-trigger');
+    const destinationContainer = document.querySelector('.app_destination-container');
+    const destinationTrigger = document.querySelector('.app_destination-trigger');
     const destinationOptions = destinationTrigger.nextElementSibling;
     const options = destinationOptions.querySelectorAll('a');
 
