@@ -1,32 +1,88 @@
-.banner-hero .border-gray-300 {
-	color: $gray;
-	border-color: transparent;
+.searcher {
+	background: $white;
+	display: flex;
 	justify-content: center;
-	position: relative;
+	margin: auto;
+	height: 4.69rem;
+	width: 100%;
 
-	svg {
-		margin-right: .9rem;
+	&__form {
+		display: flex;
+		width: 100%;
 	}
 
-	&::after {
-		content: '';
-		background-color: $gray3;
-		height: 80%;
-		position: absolute;
-		top: 8px;
-		right: 0;
-		width: .1rem;
-	}
+	&__item {
+		flex: 1 1 0%;
 
-	&--last {
-		color: $main-color;
+		&-container {
+			align-items: center;
+			border-width: .1rem;
+			color: $gray;
+			cursor: pointer;
+			border-color: transparent;
+			display: flex;
+			justify-content: center;
+			padding: 1.5rem 1rem;
+			position: relative;
+			width: 100%;
 
-		&::after {
-			display: none;
+			svg {
+				margin-right: .9rem;
+			}
+
+			&::after {
+				content: '';
+				background-color: $gray3;
+				height: 80%;
+				position: absolute;
+				top: 8px;
+				right: 0;
+				width: .1rem;
+			}
+
+			&--last {
+				color: $main-color;
+
+				&::after {
+					display: none;
+				}
+			}
+
+			&::placeholder {
+				color: $gray;
+			}
 		}
-	}
 
-	&::placeholder {
-		color: $gray;
+		&-dropdown {
+			background: $white;
+			margin-top: .5rem;
+			padding: .5rem;
+			position: absolute;
+			width: 100%;
+			z-index: 10;
+
+			&-container {
+				display: flex;
+				width: 100%;
+			}
+
+			&-content {
+				padding-right: .5rem;
+			}
+
+			&-title {
+				font-size: 1.35rem;
+				line-height: 2.1rem;
+				padding: .5rem 1rem;
+			}
+
+			&-item {
+				color: $gray2;
+				display: block;
+				padding: .5rem 1rem;
+				font-size: 1rem;
+				line-height: 1.25rem;
+			}
+		}
 	}
 }

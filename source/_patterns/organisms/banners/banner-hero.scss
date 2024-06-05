@@ -1,0 +1,24 @@
+.banner-hero {
+	background-image: url('../../images/banner-home.jpg');
+	height: 525px;
+	background-size: cover;
+	background-position: 0;
+	background-repeat: no-repeat;
+	position: relative;
+
+	&__container {
+		align-items: center;
+		display: flex;
+		justify-content: center;
+		inset: 0;
+		position: absolute;
+	}
+
+	&__content {
+		align-self: flex-end;
+		margin-bottom: .5rem;
+		padding-left: .5rem;
+		padding-right: .5rem;
+		width: 100%;
+	}
+}
