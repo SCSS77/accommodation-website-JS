@@ -1,32 +1,29 @@
 <div class="searcher__item searcher__item-rooms">
     <div class="searcher__item-container searcher__item-container--last">
-        <svg width="19" height="20" viewBox="0 0 19 20" fill="none" xmlns="http://www.w3.org/2000/svg">
-            <path fill-rule="evenodd" clip-rule="evenodd" d="M9.25 0C6.48858 0 4.25 2.23858 4.25 5C4.25 7.76142 6.48858 10 9.25 10C12.0114 10 14.25 7.76142 14.25 5C14.25 2.23858 12.0114 0 9.25 0ZM6.25 5C6.25 3.34315 7.59315 2 9.25 2C10.9069 2 12.25 3.34315 12.25 5C12.25 6.65685 10.9069 8 9.25 8C7.59315 8 6.25 6.65685 6.25 5Z" fill="#282828"/>
-            <path d="M5.25 12C3.92392 12 2.65215 12.5268 1.71447 13.4645C0.776784 14.4021 0.25 15.6739 0.25 17V19C0.25 19.5523 0.697715 20 1.25 20C1.80228 20 2.25 19.5523 2.25 19V17C2.25 16.2043 2.56607 15.4413 3.12868 14.8787C3.69129 14.3161 4.45435 14 5.25 14H13.25C14.0456 14 14.8087 14.3161 15.3713 14.8787C15.9339 15.4413 16.25 16.2044 16.25 17V19C16.25 19.5523 16.6977 20 17.25 20C17.8023 20 18.25 19.5523 18.25 19V17C18.25 15.6739 17.7232 14.4021 16.7855 13.4645C15.8479 12.5268 14.5761 12 13.25 12H5.25Z" fill="#282828"/>
-        </svg>
-        <span class="app_rooms-label room-toggle">2 Adultos · 1 hab.</span>
+        {{> atoms-user }}
+        <span class="searcher__item-label app_rooms-label">2 Adultos · 1 hab.</span>
     </div>
-    <div class="app_rooms-options hidden absolute z-10 mt-2 w-full bg-white shadow-lg ring-1 ring-black ring-opacity-5 p-2 w-full">
-        <div class="flex items-center space-x-2 px-4 py-2">
+    <div class="searcher__item-dropdown shadow-lg ring-1 ring-black ring-opacity-5 hidden app_rooms-options">
+        <div class="searcher__item-dropdown-item">
             <span><strong>Adultos</strong></span>
-            <button class="btn-decrement bg-gray-200 text-gray-700 px-2 py-1" data-type="adults">-</button>
-            <span class="app_rooms-adults-count counter">2</span>
-            <button class="btn-increment bg-gray-200 text-gray-700 px-2 py-1" data-type="adults">+</button>
+            <button class="searcher__item-button btn-decrement" data-type="adults">-</button>
+            <span class="searcher__item-counter app_rooms-adults-count">2</span>
+            <button class="searcher__item-button btn-increment" data-type="adults">+</button>
         </div>
-        <div class="flex items-center space-x-2 px-4 py-2">
+        <div class="searcher__item-dropdown-item">
             <span>
                 <strong>Niños</strong>
                 <span>De 0 a 11 años</span>
             </span>
-            <button class="btn-decrement bg-gray-200 text-gray-700 px-2 py-1" data-type="children">-</button>
-            <span class="app_rooms-children-count counter">0</span>
-            <button class="btn-increment bg-gray-200 text-gray-700 px-2 py-1" data-type="children">+</button>
+            <button class="searcher__item-button btn-decrement" data-type="children">-</button>
+            <span class="searcher__item-counter app_rooms-children-count counter">0</span>
+            <button class="searcher__item-button btn-increment" data-type="children">+</button>
         </div>
-        <div class="flex items-center space-x-2 px-4 py-2">
+        <div class="searcher__item-dropdown-item">
             <span><strong>Habitaciones</strong></span>
-            <button class="btn-decrement bg-gray-200 text-gray-700 px-2 py-1" data-type="rooms">-</button>
-            <span class="app_rooms-count counter">1</span>
-            <button class="btn-increment bg-gray-200 text-gray-700 px-2 py-1" data-type="rooms">+</button>
+            <button class="searcher__item-button btn-decrement" data-type="rooms">-</button>
+            <span class="searcher__item-counter app_rooms-count counter">1</span>
+            <button class="searcher__item-button btn-increment" data-type="rooms">+</button>
         </div>
     </div>
 </div>

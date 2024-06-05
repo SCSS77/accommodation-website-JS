@@ -165,28 +165,31 @@ button .button--green:hover {
 .searcher__item-rooms {
   position: relative;
 }
-
-.app_rooms-label {
+.searcher__item-rooms .searcher__item-label {
   white-space: nowrap;
 }
-
-.app_rooms-options {
+.searcher__item-rooms .searcher__item-dropdown {
   font-size: 1rem;
   line-height: 1.25rem;
   margin-top: 0.1rem;
   left: -18px;
-  width: 330px;
+  width: calc(100% + 36px);
 }
-.app_rooms-options .items-center span span {
+.searcher__item-rooms .searcher__item-dropdown-item {
+  align-items: center;
+  color: #282828;
+  display: flex;
+  padding: 0.5rem 1rem;
+}
+.searcher__item-rooms .searcher__item-dropdown-item span strong {
+  font-size: 0.975rem;
+}
+.searcher__item-rooms .searcher__item-dropdown-item span span {
   color: #686868;
   display: block;
   font-size: 0.775rem;
 }
-.app_rooms-options .btn-decrement {
-  margin-left: auto;
-}
-.app_rooms-options .btn-decrement,
-.app_rooms-options .btn-increment {
+.searcher__item-rooms .searcher__item-button {
   background-color: #FFFAF5;
   color: #282828;
   font-size: 1.8rem;
@@ -194,16 +197,17 @@ button .button--green:hover {
   height: 2.5rem;
   width: 2.5rem;
 }
-.app_rooms-options .btn-decrement:hover,
-.app_rooms-options .btn-increment:hover {
+.searcher__item-rooms .searcher__item-button:hover {
   color: #282828;
 }
-.app_rooms-options .btn-decrement.disabled,
-.app_rooms-options .btn-increment.disabled {
+.searcher__item-rooms .searcher__item-button.disabled {
   color: #CDCDCD;
   background-color: #F7F7F7;
 }
-.app_rooms-options .counter {
+.searcher__item-rooms .searcher__item-button.btn-decrement {
+  margin-left: auto;
+}
+.searcher__item-rooms .searcher__item-counter {
   align-items: center;
   display: flex;
   justify-content: center;

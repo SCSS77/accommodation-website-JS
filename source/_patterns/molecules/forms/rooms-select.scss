@@ -1,60 +1,70 @@
 .searcher__item {
 
-	&-rooms {
-		position: relative;
-	}
-}
+  &-rooms {
+    position: relative;
 
+    .searcher__item {
 
-.app_rooms-label {
-  white-space: nowrap;
-}
+      &-label {
+        white-space: nowrap;
+      }
 
-.app_rooms-options {
-  font-size: 1rem;
-  line-height: 1.25rem;
-  margin-top: .1rem;
-  left: -18px;
-  width: 330px;
+      &-dropdown {
+        font-size: 1rem;
+        line-height: 1.25rem;
+        margin-top: .1rem;
+        left: -18px;
+        width: calc(100% + 36px);
 
-  .items-center {
-    span {
-      span {
-        color: $gray2;
-        display: block;
-        font-size: 0.775rem;
+        &-item {
+          align-items: center;
+          color: $main-color;
+          display: flex;
+          padding: .5rem 1rem;
+
+          span {
+            strong {
+              font-size: 0.975rem;
+            }
+
+            span {
+              color: $gray2;
+              display: block;
+              font-size: 0.775rem;
+            }
+          }
+        }
+      }
+
+      &-button {
+        background-color: $white2;
+        color: $main-color;
+        font-size: 1.8rem;
+        line-height: 1;
+        height: 2.5rem;
+        width: 2.5rem;
+
+        &:hover {
+          color: $main-color;
+        }
+
+        &.disabled {
+          color: $gray3;
+          background-color: $gray4;
+        }
+
+        &.btn-decrement {
+          margin-left: auto;
+        }
+      }
+
+      &-counter {
+        align-items: center;
+        display: flex;
+        justify-content: center;
+        height: 2.5rem;
+        width: 3rem;
       }
     }
-  }
-
-  .btn-decrement {
-    margin-left: auto;
-  }
-
-  .btn-decrement,
-  .btn-increment {
-    background-color: $white2;
-    color: $main-color;
-    font-size: 1.8rem;
-    line-height: 1;
-    height: 2.5rem;
-    width: 2.5rem;
-
-    &:hover {
-      color: $main-color;
-    }
-
-    &.disabled {
-      color: $gray3;
-      background-color: $gray4;
-    }
-  }
-
-  .counter {
-    align-items: center;
-    display: flex;
-    justify-content: center;
-    height: 2.5rem;
-    width: 3rem;
   }
 }
