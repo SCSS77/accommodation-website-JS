@@ -37,6 +37,12 @@ button:hover {
   color: #FFF;
 }
 
+.header__item--language {
+  align-items: center;
+  display: flex;
+  margin-right: 1.1rem !important;
+}
+
 .app_destination-options {
   margin-top: 0.1rem;
   width: 936px;
@@ -163,6 +169,66 @@ button:hover {
 .app_destination .destination-options .destination-link {
   font-size: 1rem;
   line-height: 1.25rem;
+}
+
+.header__navbar {
+  align-items: center;
+  display: flex;
+  font-size: 0.875rem;
+  line-height: 1.25rem;
+  margin-right: 0.8rem;
+  position: relative;
+}
+.header__list {
+  display: flex;
+}
+.header__item {
+  margin: 0 0.8rem;
+}
+.header__item:first-child {
+  margin-left: 0;
+}
+
+.header {
+  background-color: #FFF;
+  margin-bottom: 1.5rem;
+}
+.header__container {
+  align-items: center;
+  display: flex;
+  justify-content: space-between;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 1rem;
+}
+.header__dropdown {
+  position: relative;
+}
+.header__dropdown button.header__item {
+  outline: 0.2rem solid transparent;
+  outline-offset: 0.2rem;
+}
+.header__dropdown-container {
+  background-color: #FFF;
+  margin-top: 0.5rem;
+  position: absolute;
+  right: 0;
+  width: 12rem;
+  z-index: 10;
+}
+.header__dropdown-list {
+  padding-top: 0.25rem;
+  padding-bottom: 0.25rem;
+}
+.header__dropdown-link {
+  display: block;
+  padding: 0.5rem 1rem;
+}
+.header__dropdown-link:hover {
+  background-color: #F3F4F6;
+}
+.header__navbar--right > button.header__item {
+  margin-right: 0;
 }
 
 .banner-hero {

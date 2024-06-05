@@ -7,11 +7,14 @@
 @import "scss/common";
 
 @import "../_patterns/atoms/buttons/button";
+@import "../_patterns/atoms/buttons/button-language";
 
 @import "../_patterns/molecules/forms/destination-select";
 @import "../_patterns/molecules/forms/rooms-select";
 @import "../_patterns/molecules/text/heading-destination-container";
+@import "../_patterns/molecules/nav/navbar";
 
+@import "../_patterns/organisms/global/header";
 @import "../_patterns/organisms/banners/hero-banner";
 @import "../_patterns/organisms/forms/destination-container";
 @import "../_patterns/organisms/global/pre-header";
