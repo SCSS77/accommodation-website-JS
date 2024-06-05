@@ -16,6 +16,11 @@ button {
 	}
 }
 
+button {
+	outline: .2rem solid transparent;
+	outline-offset: .2rem;
+}
+
 .hidden {
     display: none;
 }

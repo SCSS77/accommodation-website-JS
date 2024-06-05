@@ -8,15 +8,18 @@
 
 @import "../_patterns/atoms/buttons/button";
 @import "../_patterns/atoms/buttons/button-language";
+@import "../_patterns/atoms/text/heading-destination-options";
+@import "../_patterns/atoms/text/heading-destination-link";
 
+@import "../_patterns/molecules/layout/layout-container";
+@import "../_patterns/molecules/nav/navbar";
 @import "../_patterns/molecules/forms/destination-select";
 @import "../_patterns/molecules/forms/rooms-select";
 @import "../_patterns/molecules/text/heading-destination-container";
-@import "../_patterns/molecules/nav/navbar";
 
+@import "../_patterns/organisms/global/pre-header";
 @import "../_patterns/organisms/global/header";
 @import "../_patterns/organisms/banners/hero-banner";
 @import "../_patterns/organisms/forms/destination-container";
-@import "../_patterns/organisms/global/pre-header";
+@import "../_patterns/organisms/text/heading-with-destination";
 @import "../_patterns/organisms/section/why-choose-us";
-

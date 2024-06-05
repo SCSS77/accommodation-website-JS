@@ -1,0 +1,15 @@
+.page-content {
+
+  &__title-dropdown {
+    background-color: $white;
+    margin-top: .5rem;
+    position: absolute;
+    width: 100%;
+    z-index: 10;
+
+    &-list {
+      padding-top: .25rem;
+      padding-bottom: .25rem;
+    }
+  }
+}

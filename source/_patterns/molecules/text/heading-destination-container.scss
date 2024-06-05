@@ -1,3 +1,15 @@
+.page-content {
+
+	&__title-toggle {
+		display: inline-block;
+		position: relative;
+
+		span {
+			cursor: pointer;
+		}
+	}
+}
+
 .app_destination {
 
 	&-container {

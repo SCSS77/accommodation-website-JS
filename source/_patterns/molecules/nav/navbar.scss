@@ -3,7 +3,7 @@
   &__navbar {
     align-items: center;
     display: flex;
-    font-size: 0.875rem;
+    font-size: .875rem;
     line-height: 1.25rem;
     margin-right: .8rem;
     position: relative;
@@ -13,11 +13,16 @@
     display: flex;
   }
 
-  &__item {
+  &__item,
+  &__item-button {
     margin: 0 .8rem;
 
     &:first-child {
       margin-left: 0;
+    }
+
+    &:last-child {
+      margin-right: 0;
     }
   }
 }

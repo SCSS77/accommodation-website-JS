@@ -14,14 +14,6 @@
   &__dropdown {
     position: relative;
 
-    button {
-
-      &.header__item {
-        outline: .2rem solid transparent;
-        outline-offset: .2rem;
-      }
-    }
-
     &-container {
       background-color: $white;
       margin-top: .5rem;
@@ -42,16 +34,6 @@
 
       &:hover {
         background-color: $gray5;
-      }
-    }
-  }
-
-  &__navbar--right {
-
-    > button {
-
-      &.header__item {
-        margin-right: 0;
       }
     }
   }

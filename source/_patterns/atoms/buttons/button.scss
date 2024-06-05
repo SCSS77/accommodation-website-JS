@@ -1,12 +1,14 @@
-.banner-hero {
+.button {
+  font-size: .875rem;
+  text-transform: uppercase;
+  height: 100%;
+  padding: .5rem 1rem;
+  transition: color .15s ease-in-out,background-color .15s ease-in-out;
+  width: 100%;
 
-  form button {
+  &--green {
     background: $links-color;
-    font-size: 0.875rem;
-    text-transform: uppercase;
-    height: 100%;
-    transition: color .15s ease-in-out,background-color .15s ease-in-out;
-    width: 100%;
+    button
 
     &:hover {
       background: $main-color-darken;
