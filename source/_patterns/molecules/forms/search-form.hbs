@@ -1,19 +1,11 @@
 {{#if searchForm }}
-<form method="post" action="{{ url }}" role="search" class="c-search-form {{ styleModifier }}">
-
-	{{#each searchLabel }}
-	<label for="search" class="c-search-form__label is-vishidden {{ styleModifier }}">{{{ label }}}</label>
-	{{/ each }}
-
-	<div class="c-search-form__body">
-
-		<input type="search" id="search" class="c-search-form__input" placeholder="{{ placeholder }}" value="{{ searchValue }}" />
-
-		{{# searchFormButton }}
-			{{> molecules-button }}
-		{{/ searchFormButton }}
-
-	</div>
-
-</form><!-- end c-search -->
+<form method="post" action="{{ url }}" role="search" class="bg-white shadow p-4 rounded-lg flex {{ styleModifier }}">
+    {{#each searchLabel }}
+    <label for="search" class="search-form-label is-vishidden {{ styleModifier }}">{{{ label }}}</label>
+    {{/ each }}
+    <div class="search-form-body">
+        {{> atoms-input type="search" placeholder="Encuentra tu mejor estancia" }}
+        {{> atoms-button type="submit" text="Buscar" }}
+    </div>
+</form>
 {{/ if }}

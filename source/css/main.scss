@@ -1,14 +1,14 @@
-@import "scss/custom/utils/variables";
+@import "scss/utils/variables";
 
 /*------------------------------------*\
     #CUSTOM STYLES
 \*------------------------------------*/
 
-@import "scss/custom/common";
-@import "../_patterns/organisms/custom/global/header";
-@import "../_patterns/organisms/custom/banners/banner-hero";
-@import "../_patterns/molecules/custom/forms/selector";
-@import "../_patterns/molecules/custom/forms/selector-rooms";
-@import "../_patterns/atoms/custom/buttons/button";
-@import "../_patterns/organisms/custom/section/why-choose-us";
+@import "scss/common";
+@import "../_patterns/organisms/global/header";
+@import "../_patterns/organisms/banners/banner-hero";
+@import "../_patterns/molecules/forms/selector";
+@import "../_patterns/molecules/forms/selector-rooms";
+@import "../_patterns/atoms/buttons/button";
+@import "../_patterns/organisms/section/why-choose-us";
 
