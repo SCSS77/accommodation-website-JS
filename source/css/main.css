@@ -212,7 +212,30 @@ button:hover {
   color: #9A9A9A;
 }
 
-.pre-header .font-open-sans {
+.pre-header {
+  background-color: #282828;
+  font-size: 0.875rem;
+  line-height: 1.25rem;
+  color: #FFF;
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
+}
+.pre-header__container {
+  align-items: center;
+  display: flex;
+  gap: 4rem;
+  justify-content: center;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 2.5rem;
+  padding-right: 2.5rem;
+}
+.pre-header__item {
+  align-items: center;
+  display: flex;
+  gap: 0.5rem;
+}
+.pre-header__item-text {
   font-size: 0.775rem;
 }
 
