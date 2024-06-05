@@ -124,6 +124,7 @@ button .button--green:hover {
   width: 936px;
 }
 .searcher__item-destination .searcher__item-dropdown-grid {
+  display: grid;
   gap: 1rem 4rem;
   grid-template-columns: repeat(2, minmax(0, 1fr));
   padding: 1rem 0;
@@ -135,6 +136,9 @@ button .button--green:hover {
   font-size: 0.875rem;
   line-height: 1.25rem;
   width: 270px;
+}
+.searcher__item-destination .searcher__item-dropdown-grid-item:hover .searcher__item-dropdown-grid-text {
+  text-decoration: underline;
 }
 .searcher__item-destination .searcher__item-dropdown-grid-image {
   margin-right: 0.7rem;
@@ -153,6 +157,9 @@ button .button--green:hover {
 }
 .searcher__item-dropdown-content--right {
   width: 63%;
+}
+.searcher__item-dropdown-content--right .searcher__item-dropdown-title {
+  padding-left: 0;
 }
 
 .searcher__item-rooms {
