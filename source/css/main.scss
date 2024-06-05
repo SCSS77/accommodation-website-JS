@@ -5,10 +5,15 @@
 \*------------------------------------*/
 
 @import "scss/common";
-@import "../_patterns/organisms/global/header";
-@import "../_patterns/organisms/banners/banner-hero";
-@import "../_patterns/molecules/forms/selector";
-@import "../_patterns/molecules/forms/selector-rooms";
+
 @import "../_patterns/atoms/buttons/button";
+
+@import "../_patterns/molecules/forms/destination-select";
+@import "../_patterns/molecules/forms/rooms-select";
+@import "../_patterns/molecules/text/destination-selector";
+
+@import "../_patterns/organisms/banners/hero-banner";
+@import "../_patterns/organisms/forms/destination-selector";
+@import "../_patterns/organisms/global/pre-header";
 @import "../_patterns/organisms/section/why-choose-us";
 

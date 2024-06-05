@@ -1,0 +1,32 @@
+.banner-hero .border-gray-300 {
+	color: $gray;
+	border-color: transparent;
+	justify-content: center;
+	position: relative;
+
+	svg {
+		margin-right: .9rem;
+	}
+
+	&::after {
+		content: '';
+		background-color: $gray3;
+		height: 80%;
+		position: absolute;
+		top: 8px;
+		right: 0;
+		width: .1rem;
+	}
+
+	&--last {
+		color: $main-color;
+
+		&::after {
+			display: none;
+		}
+	}
+
+	&::placeholder {
+		color: $gray;
+	}
+}
