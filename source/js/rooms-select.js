@@ -21,7 +21,7 @@ document.addEventListener('DOMContentLoaded', function() {
 
     function updateRoomInfo() {
         if (roomInfoToggle && adultsCount && childrenCount && roomsCount) {
-            roomInfoToggle.textContent = `${adultsCount.textContent} Adults · ${childrenCount.textContent} Children · ${roomsCount.textContent} Rooms`;
+            roomInfoToggle.textContent = `${adultsCount.textContent} Adultos · ${childrenCount.textContent} Niños · ${roomsCount.textContent} Habitaciones`;
 
             localStorage.setItem('adults', adultsCount.textContent);
             localStorage.setItem('children', childrenCount.textContent);
@@ -44,7 +44,7 @@ document.addEventListener('DOMContentLoaded', function() {
     if (localStorage.getItem('roomInfo')) {
         roomInfoToggle.textContent = localStorage.getItem('roomInfo');
     } else {
-        updateRoomInfo(); // To set initial values in localStorage
+        updateRoomInfo();
     }
 
     document.querySelectorAll('.btn-increment, .btn-decrement').forEach(button => {
