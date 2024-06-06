@@ -76,11 +76,12 @@ document.addEventListener('DOMContentLoaded', function() {
         });
     });
 
-    if (localStorage.getItem('rooms') === '0') {
-        const decrementButton = document.querySelector('.app_btn-decrement[data-type="rooms"]');
-        if (decrementButton) {
-            decrementButton.disabled = true;
-            decrementButton.classList.add('disabled');
+    const decrementButtons = document.querySelectorAll('.app_btn-decrement');
+    decrementButtons.forEach(button => {
+        const type = button.getAttribute('data-type');
+        if (localStorage.getItem(type) === '0') {
+            button.disabled = true;
+            button.classList.add('disabled');
         }
-    }
+    });
 });
