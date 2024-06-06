@@ -431,23 +431,35 @@ button {
   padding-bottom: 1.25rem;
 }
 
-.why-choose {
+.why-choose-us {
   margin: auto;
   max-width: 890px;
   padding: 5.6rem 0;
 }
-.why-choose-title {
+.why-choose-us__container {
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+}
+.why-choose-us__grid {
+  display: grid;
+  gap: 1rem;
+  margin-top: 1.5rem;
+}
+.why-choose-us__title {
   font-size: 3.2rem;
   line-height: 5rem;
 }
-.why-choose-container {
+.why-choose-us__content {
+  background: #FFF;
   text-align: center;
   max-width: 12rem;
+  padding: 1rem;
 }
-.why-choose-container svg {
+.why-choose-us__content svg {
   margin: auto;
 }
-.why-choose-subtitle {
+.why-choose-us__subtitle {
   color: #686868;
   font-size: 0.975rem;
   line-height: 1.25rem;
