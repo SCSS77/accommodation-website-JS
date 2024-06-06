@@ -47,7 +47,7 @@ document.addEventListener('DOMContentLoaded', function() {
         updateRoomInfo();
     }
 
-    document.querySelectorAll('.btn-increment, .btn-decrement').forEach(button => {
+    document.querySelectorAll('.app_btn-increment, .app_btn-decrement').forEach(button => {
         button.addEventListener('click', function(e) {
             e.preventDefault();
             const type = this.getAttribute('data-type');
@@ -62,7 +62,7 @@ document.addEventListener('DOMContentLoaded', function() {
                 countElement.textContent = newCount;
 
                 if (type !== 'rooms') {
-                    const decrementButton = this.parentElement.querySelector('.btn-decrement');
+                    const decrementButton = this.parentElement.querySelector('.app_btn-decrement');
                     decrementButton.disabled = newCount <= 0;
                     if (newCount <= 0) {
                         decrementButton.classList.add('disabled');
