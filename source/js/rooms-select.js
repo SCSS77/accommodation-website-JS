@@ -61,14 +61,12 @@ document.addEventListener('DOMContentLoaded', function() {
                 }
                 countElement.textContent = newCount;
 
-                if (type !== 'rooms') {
-                    const decrementButton = this.parentElement.querySelector('.app_btn-decrement');
-                    decrementButton.disabled = newCount <= 0;
-                    if (newCount <= 0) {
-                        decrementButton.classList.add('disabled');
-                    } else {
-                        decrementButton.classList.remove('disabled');
-                    }
+                const decrementButton = this.parentElement.querySelector('.app_btn-decrement');
+                decrementButton.disabled = newCount <= 0;
+                if (newCount <= 0) {
+                    decrementButton.classList.add('disabled');
+                } else {
+                    decrementButton.classList.remove('disabled');
                 }
 
                 updateRoomInfo();
