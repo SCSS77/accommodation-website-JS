@@ -68,7 +68,7 @@ button {
 
 .page-content__title-dropdown-link {
   display: block;
-  font-size: 0.875rem;
+  font-size: 0.975rem;
   line-height: 1.25rem;
   padding: 0.5rem 1rem;
 }
@@ -128,10 +128,11 @@ button {
   display: grid;
   gap: 1rem 4rem;
   grid-template-columns: repeat(2, minmax(0, 1fr));
-  padding: 1rem 0;
+  padding: 0.5rem 0 1rem;
   width: 540px;
 }
 .searcher__item-destination .searcher__item-dropdown-grid-item {
+  align-items: center;
   cursor: pointer;
   display: flex;
   font-size: 0.875rem;
@@ -142,7 +143,7 @@ button {
   text-decoration: underline;
 }
 .searcher__item-destination .searcher__item-dropdown-grid-image {
-  margin-right: 0.7rem;
+  margin-right: 1rem;
 }
 .searcher__item-destination .searcher__item-dropdown-grid-text {
   flex: 1 1 0%;
