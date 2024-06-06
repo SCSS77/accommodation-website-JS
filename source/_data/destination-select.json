@@ -1,0 +1,11 @@
+{
+    "destinations": ["A Coruña", "Vigo", "Las Rozas, Madrid", "Barcelona", "Sabadell, Barcelona", "Lugo"],
+    "accommodations": [
+        {"name": "Hotel 1", "location": "A Coruña", "image": "../../../images/alojamiento1.jpg"},
+        {"name": "Hotel 2", "location": "Vigo", "image": "../../../images/alojamiento2.jpg"},
+        {"name": "Hotel 3", "location": "Madrid", "image": "../../../images/alojamiento3.jpg"},
+        {"name": "Hotel 4", "location": "Barcelona", "image": "../../../images/alojamiento4.jpg"},
+        {"name": "Hotel 5", "location": "Lugo", "image": "../../../images/alojamiento5.jpg"},
+        {"name": "Hotel 6", "location": "Barcelona", "image": "../../../images/alojamiento6.jpg"}
+    ]
+}
