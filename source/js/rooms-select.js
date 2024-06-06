@@ -75,4 +75,12 @@ document.addEventListener('DOMContentLoaded', function() {
             }
         });
     });
+
+    if (localStorage.getItem('rooms') === '0') {
+        const decrementButton = document.querySelector('.app_btn-decrement[data-type="rooms"]');
+        if (decrementButton) {
+            decrementButton.disabled = true;
+            decrementButton.classList.add('disabled');
+        }
+    }
 });
